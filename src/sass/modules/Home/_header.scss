@@ -1,0 +1,55 @@
+//* nav dropdown
+.btnD {
+    column-gap: var(--gap);
+    cursor: pointer;
+    border-radius: var(--radius);
+    border: none;
+    position: relative;
+}
+.myDropdown {
+    position: absolute;
+    width: 250px;
+    background: white;
+}
+.myDropdown a {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap);
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    color: black;
+}
+.myDropdown a:hover {
+    background-color: var(--color);
+    color: $red;
+}
+.myDropdown {
+    position: absolute;
+    width: 250px;
+    border-radius: var(--radius);
+    background: white;
+    transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+
+    transform: translateY(0.5rem);
+    visibility: hidden;
+    opacity: 0;
+}
+.show {
+    transform: translateY(0rem);
+    visibility: visible;
+    opacity: 1;
+}
+.arrow {
+    transform: rotate(180deg);
+    transition: 0.2s ease;
+}
+//* nav links
+.navlinks{
+    font-weight: bold;
+    opacity: 50%;
+}
+.navlinks:hover{
+    border-bottom: 2px solid $red;
+    opacity: 100%;
+    padding-bottom: 3px;
+}

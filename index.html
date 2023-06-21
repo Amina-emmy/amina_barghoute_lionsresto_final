@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/app.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- todo Navbar -->
+    <header class="d-lg-flex align-items-lg-center justify-content-lg-around my-lg-3">
+        <div>
+            <a class="nav-link fw-bold fs-3" href="#">LionsResto<span class="text-red">.</span></a>
+        </div>
+        <div class="d-lg-flex justify-content-lg-around">
+            <div class="mx-lg-2">
+                <a class="navlinks nav-link active" aria-current="page" href="#">Home</a>
+            </div>
+            <div class="px-lg-3">
+                <a class="navlinks nav-link" href="#">About</a>
+            </div>
+            <div class="px-lg-3">
+                <a class="navlinks nav-link" href="#">Menu</a>
+            </div>
+            <div>
+                <a class="navlinks nav-link" href="#">Events</a>
+            </div>
+            <div class="px-lg-3">
+                <a class="navlinks nav-link" href="#">Chefs</a>
+            </div>
+            <div class="px-lg-3">
+                <a class="navlinks nav-link" href="#">Gallery</a>
+            </div>
+            <div class="px-lg-3">
+                <div class="dropdown">
+                    <div class="navlinks btnD" id="btnD">Drop Down
+                        <i class="fa fa-caret-down ms-1" id="arrow"></i>
+                    </div>
+                    <div class="myDropdown" id="myDropdown">
+                        <a href="#">Drop Down 1</a>
+                        <a href="#">
+                            <div class="btnD2" id="btnD2">Deep Drop Down
+                                <i class="fa fa-caret-down ms-1" id="arrow"></i>
+                            </div>
+                            <div class="myDropdown" id="myDropdown2">
+                                <a href="#">one</a>
+                                <a href="#">two</a>
+                            </div>
+                        </a>
+                        <a href="#">Drop Down 2</a>
+                        <a href="#">Drop Down 3</a>
+                        <a href="#">Drop Down 4</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navlinks px-lg-3">
+                <a class="nav-link" href="#">Contact</a>
+            </div>
+        </div>
+        <div>
+            <form>
+                <button class="btn btn-red rounded-pill px-3">Connexion</button>
+            </form>
+        </div>
+    </header>
+    <!-- todo first section -->
+
+
+
+    <script type="module" src="./public/js/app.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+//* always import variables first .. on the top
+@import "./variables";
+@import "./fonts";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+@import "./modules/allModules";
