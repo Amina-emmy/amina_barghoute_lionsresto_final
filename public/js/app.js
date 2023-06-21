@@ -31,3 +31,17 @@ const toggleDropdown = function () {
         toggleDropdown2(); 
     }
   });
+
+  //* menu Burger
+  let btn_burger=document.querySelector("#logoBurger");
+  function menuBurger() {
+    let x = document.querySelector(".linksBurger");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  btn_burger.addEventListener("click",menuBurger)
+
+//todo first section : -----------------------------------------------------------------------------------------------------------

@@ -1,4 +1,5 @@
 //* nav dropdown
+
 .btnD {
     column-gap: var(--gap);
     cursor: pointer;
@@ -43,6 +44,7 @@
     transform: rotate(180deg);
     transition: 0.2s ease;
 }
+
 //* nav links
 .navlinks{
     font-weight: bold;
@@ -52,4 +54,87 @@
     border-bottom: 2px solid $red;
     opacity: 100%;
     padding-bottom: 3px;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+.menuBurger{
+    display: none;
+}
+//* nav version tablet
+@media ( min-width:768px ) and (max-width:1023px)  {
+    .navlaptop{
+        display: none;
+    }
+    .logo{
+        font-size: 40px;
+    }
+    .connexion{
+        font-size: 20px;
+    }
+    .menuBurger{
+        display: block;
+    }
+    #logoBurger{
+        position: fixed;
+        font-size:30px;
+        top: 25px;
+    }
+    .linksBurger{
+        width: 10rem;
+        display: none;
+        position: fixed;
+        top: 80px;
+        right:0px;
+    }
+    .navlinks{
+        padding-left: 12px;
+        font-weight: bold;
+        opacity: 50%;
+    }
+    .navlinks:hover{
+        border-bottom: 2px solid $red;
+        opacity: 100%;
+        padding-bottom: 3px;
+    }
+
+}
+
+//* nav version mobile
+@media ( min-width:375px ) and (max-width:425px)  {
+    .navlaptop{
+        display: none;
+    }
+    .logo{
+        font-size: 32px;
+    }
+    .connexion{
+        font-size: 16px;
+    }
+    .menuBurger{
+        display: block;
+    }
+    #logoBurger{
+        position: fixed;
+        font-size:22px;
+        top: 23px;
+    }
+    .linksBurger{
+        width: 7rem;
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 5px;
+    }
+    .navlinks{
+        padding-left: 7px;
+        font-weight: bold;
+        opacity: 50%;
+    }
+    .navlinks:hover{
+        border-bottom: 2px solid $red;
+        opacity: 100%;
+        padding-bottom: 3px;
+    }
 }

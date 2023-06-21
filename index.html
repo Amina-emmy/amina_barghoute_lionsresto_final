@@ -11,11 +11,14 @@
 
 <body>
     <!-- todo Navbar -->
-    <header class="d-lg-flex align-items-lg-center justify-content-lg-around my-lg-3">
+    <header>
+    <div class="d-lg-flex align-items-lg-center justify-content-lg-around my-lg-3 
+                d-md-flex align-items-md-center justify-content-md-around my-md-3
+                d-flex align-items-center justify-content-around my-3">
         <div>
-            <a class="nav-link fw-bold fs-3" href="#">LionsResto<span class="text-red">.</span></a>
+            <a class="logo nav-link" href="#">LionsResto<span class="text-red">.</span></a>
         </div>
-        <div class="d-lg-flex justify-content-lg-around">
+        <div class="navlaptop d-lg-flex justify-content-lg-around">
             <div class="mx-lg-2">
                 <a class="navlinks nav-link active" aria-current="page" href="#">Home</a>
             </div>
@@ -60,13 +63,30 @@
                 <a class="nav-link" href="#">Contact</a>
             </div>
         </div>
-        <div>
+        <div class="d-md-flex align-items-md-center d-flex align-items-center">
             <form>
-                <button class="btn btn-red rounded-pill px-3">Connexion</button>
+                <button class="btn btn-red rounded-pill px-lg-3 py-lg-2 px-md-4 py-md-2 py-1 px-2 me-2 connexion">Connexion</button>
             </form>
+            <!-- ? "Hamburger menu" -->
+            <div class="menuBurger mx-md-3">
+                <a href="#" id="logoBurger" class="nav-link">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="linksBurger">
+                    <a class="navlinks nav-link" aria-current="page" href="#">Home</a>
+                    <a class="navlinks nav-link" href="#">About</a>
+                    <a class="navlinks nav-link" href="#">Menu</a>
+                    <a class="navlinks nav-link" href="#">Events</a>
+                    <a class="navlinks nav-link" href="#">Chefs</a>
+                    <a class="navlinks nav-link" href="#">Gallery</a>
+                    <a class="navlinks nav-link" href="#">Drop Down</a>
+                    <a class="navlinks nav-link" href="#">Contact</a>
+                </div>  
+            </div>
         </div>
-    </header>
-    <!-- todo first section -->
+    </div>
+</header>
+    <!-- todo first section : -->
 
 
 
