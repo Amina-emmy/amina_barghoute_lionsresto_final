@@ -11075,13 +11075,19 @@ textarea.form-control-lg {
     top: 25px;
   }
   .linksBurger {
-    width: 10rem;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    width: 12rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: none;
     position: fixed;
+    z-index: 1;
     top: 80px;
     right: 0px;
   }
   .navlinks {
+    padding: 4px;
     padding-left: 12px;
     font-weight: bold;
     opacity: 50%;
@@ -11111,13 +11117,19 @@ textarea.form-control-lg {
     top: 23px;
   }
   .linksBurger {
-    width: 7rem;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    width: 10rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
     display: none;
     position: fixed;
+    z-index: 1;
     top: 70px;
     right: 5px;
   }
   .navlinks {
+    padding: 3px;
     padding-left: 7px;
     font-weight: bold;
     opacity: 50%;
@@ -11126,6 +11138,42 @@ textarea.form-control-lg {
     border-bottom: 2px solid #CC1211;
     opacity: 100%;
     padding-bottom: 3px;
+  }
+}
+.hero {
+  height: 29rem;
+  width: 100vw;
+}
+.hero #heroImg {
+  width: 25rem;
+}
+.hero h1, .hero .h1 {
+  font-family: "amaticBold";
+  font-size: 60px;
+}
+.hero p {
+  font-size: 13px;
+  opacity: 50%;
+  line-height: 2px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    height: 27rem;
+    width: 100vw;
+  }
+  .hero #heroImg {
+    width: 20rem;
+  }
+  .hero h1, .hero .h1 {
+    font-family: "amaticBold";
+    font-size: 55px;
+  }
+  .hero p {
+    font-size: 13px;
+    opacity: 50%;
+    margin: 0;
+    line-height: 14px;
   }
 }
 

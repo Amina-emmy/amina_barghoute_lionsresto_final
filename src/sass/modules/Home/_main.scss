@@ -1,0 +1,37 @@
+//todo first section : Hero ------------------------------------
+.hero{
+    #heroImg{
+        width: 25rem;
+    }
+    height: 29rem;
+    width: 100vw;
+    h1{
+        font-family: "amaticBold";
+        font-size: 60px;
+    }
+    p{
+        font-size: 13px;
+        opacity: 50%;
+        line-height: 2px;
+    }
+}
+//^ nav version tablet
+@media ( min-width:768px ) and (max-width:1023px)  {
+    .hero{
+        #heroImg{
+            width: 20rem;
+        }
+        height: 27rem;
+        width: 100vw;
+        h1{
+            font-family: "amaticBold";
+            font-size: 55px;
+        }
+        p{
+            font-size: 13px;
+            opacity: 50%;
+            margin: 0;
+            line-height: 14px;
+        }
+    }
+}

@@ -1,5 +1,4 @@
 //* nav dropdown
-
 .btnD {
     column-gap: var(--gap);
     cursor: pointer;
@@ -62,7 +61,8 @@
 .menuBurger{
     display: none;
 }
-//* nav version tablet
+
+//^ nav version tablet
 @media ( min-width:768px ) and (max-width:1023px)  {
     .navlaptop{
         display: none;
@@ -82,13 +82,19 @@
         top: 25px;
     }
     .linksBurger{
-        width: 10rem;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.267);
+        width: 12rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
         display: none;
         position: fixed;
+        z-index: 1;
         top: 80px;
         right:0px;
     }
     .navlinks{
+        padding: 4px;
         padding-left: 12px;
         font-weight: bold;
         opacity: 50%;
@@ -101,8 +107,8 @@
 
 }
 
-//* nav version mobile
-@media ( min-width:375px ) and (max-width:425px)  {
+//^ nav version mobile
+@media ( min-width:375px ) and (max-width:425px){
     .navlaptop{
         display: none;
     }
@@ -121,13 +127,19 @@
         top: 23px;
     }
     .linksBurger{
-        width: 7rem;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.267);
+        width: 10rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
         display: none;
         position: fixed;
+        z-index: 1;
         top: 70px;
         right: 5px;
     }
     .navlinks{
+        padding: 3px;
         padding-left: 7px;
         font-weight: bold;
         opacity: 50%;
