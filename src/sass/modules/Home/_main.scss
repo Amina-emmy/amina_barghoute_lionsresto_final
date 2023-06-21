@@ -1,4 +1,4 @@
-//todo first section : Hero ------------------------------------
+//todo section 1 : Hero --------------------------------------------------------------------------------
 .hero{
     #heroImg{
         width: 25rem;
@@ -12,26 +12,51 @@
     p{
         font-size: 13px;
         opacity: 50%;
-        line-height: 2px;
+        line-height: 3px;
     }
 }
-//^ nav version tablet
+//^ hero version tablet
 @media ( min-width:768px ) and (max-width:1023px)  {
     .hero{
-        #heroImg{
-            width: 20rem;
-        }
-        height: 27rem;
+        height: 74rem;
         width: 100vw;
-        h1{
-            font-family: "amaticBold";
-            font-size: 55px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        #heroImg{
+            width: 40rem;
+        }
+        h1,p{
+            text-align: center;
         }
         p{
-            font-size: 13px;
-            opacity: 50%;
-            margin: 0;
-            line-height: 14px;
+            font-size: 20px;
+            line-height: 7px;
         }
     }
 }
+//^ hero version mobile
+@media ( min-width:375px ) and (max-width:425px){
+    .hero{
+        height: 57rem;
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        #heroImg{
+            width: 25rem;
+        }
+        h1,p{
+            text-align: center;
+        }
+        p{
+            margin: 0;
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+}
+
+// todo section 2 : ABOUT US ----------------------------------------------------------------->

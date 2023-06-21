@@ -13,7 +13,7 @@ const toggleDropdown = function () {
 };
 const toggleDropdown2 = function () {
     dropdownMenu2.classList.toggle("show");
-    toggleArrow2.classList.toggle("arrow");
+    toggleArrow2.classList.toggle("arrow2");
 };
 
 dropdownBtn.addEventListener("click", function (e) {
@@ -44,4 +44,6 @@ function menuBurger() {
 }
 btn_burger.addEventListener("click", menuBurger)
 
-//todo first section : -----------------------------------------------------------------------------------------------------------
+//todo section 1 : Hero -----------------------------------------------------------------------------------------------------------
+
+// todo section 2 : ABOUT US ----------------------------------------------------------------->

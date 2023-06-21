@@ -77,9 +77,9 @@
         display: block;
     }
     #logoBurger{
-        position: fixed;
-        font-size:30px;
-        top: 25px;
+        position: relative;
+        font-size:32px;
+        top: 1px;
     }
     .linksBurger{
         background-color: white;
@@ -88,7 +88,7 @@
         padding-top: 15px;
         padding-bottom: 15px;
         display: none;
-        position: fixed;
+        position: absolute;
         z-index: 1;
         top: 80px;
         right:0px;
@@ -122,9 +122,9 @@
         display: block;
     }
     #logoBurger{
-        position: fixed;
-        font-size:22px;
-        top: 23px;
+        position: relative;
+        font-size:23px;
+        top: 0.5px;
     }
     .linksBurger{
         background-color: white;
@@ -133,7 +133,7 @@
         padding-top: 8px;
         padding-bottom: 8px;
         display: none;
-        position: fixed;
+        position: absolute;
         z-index: 1;
         top: 70px;
         right: 5px;

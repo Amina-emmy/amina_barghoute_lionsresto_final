@@ -11070,9 +11070,9 @@ textarea.form-control-lg {
     display: block;
   }
   #logoBurger {
-    position: fixed;
-    font-size: 30px;
-    top: 25px;
+    position: relative;
+    font-size: 32px;
+    top: 1px;
   }
   .linksBurger {
     background-color: white;
@@ -11081,7 +11081,7 @@ textarea.form-control-lg {
     padding-top: 15px;
     padding-bottom: 15px;
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 80px;
     right: 0px;
@@ -11112,9 +11112,9 @@ textarea.form-control-lg {
     display: block;
   }
   #logoBurger {
-    position: fixed;
-    font-size: 22px;
-    top: 23px;
+    position: relative;
+    font-size: 23px;
+    top: 0.5px;
   }
   .linksBurger {
     background-color: white;
@@ -11123,7 +11123,7 @@ textarea.form-control-lg {
     padding-top: 8px;
     padding-bottom: 8px;
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 70px;
     right: 5px;
@@ -11154,26 +11154,48 @@ textarea.form-control-lg {
 .hero p {
   font-size: 13px;
   opacity: 50%;
-  line-height: 2px;
+  line-height: 3px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero {
-    height: 27rem;
+    height: 74rem;
     width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
   .hero #heroImg {
-    width: 20rem;
+    width: 40rem;
   }
-  .hero h1, .hero .h1 {
-    font-family: "amaticBold";
-    font-size: 55px;
+  .hero h1, .hero .h1, .hero p {
+    text-align: center;
   }
   .hero p {
-    font-size: 13px;
-    opacity: 50%;
+    font-size: 20px;
+    line-height: 7px;
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  .hero {
+    height: 57rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero #heroImg {
+    width: 25rem;
+  }
+  .hero h1, .hero .h1, .hero p {
+    text-align: center;
+  }
+  .hero p {
     margin: 0;
-    line-height: 14px;
+    font-size: 20px;
+    line-height: 23px;
   }
 }
 
