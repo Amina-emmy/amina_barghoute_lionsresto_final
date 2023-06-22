@@ -11140,9 +11140,12 @@ textarea.form-control-lg {
     padding-bottom: 3px;
   }
 }
+* {
+  margin: 0;
+}
+
 .hero {
   height: 29rem;
-  width: 100vw;
 }
 .hero #heroImg {
   width: 25rem;
@@ -11197,6 +11200,52 @@ textarea.form-control-lg {
     font-size: 20px;
     line-height: 23px;
   }
+}
+.section-title {
+  text-align: center;
+  margin-top: 55px;
+}
+.section-title p {
+  opacity: 50%;
+  font-weight: bold;
+  font-size: 13px;
+}
+.section-title h1, .section-title .h1 {
+  opacity: 85%;
+  font-family: "amaticBold";
+  line-height: 30px;
+}
+
+.aboutUs {
+  height: 25rem;
+  margin: 65px;
+}
+.aboutUs .about {
+  position: relative;
+  width: 60%;
+  height: 39rem;
+  overflow: hidden;
+}
+.aboutUs .about .whiteticket {
+  position: absolute;
+  text-align: center;
+  bottom: 25px;
+  left: 7%;
+  z-index: 1;
+  background-color: white;
+  width: 85%;
+}
+.aboutUs .about2 {
+  margin-left: 55px;
+  width: 40%;
+  height: 39rem;
+  overflow: hidden;
+}
+.aboutUs .about2 p, .aboutUs .about2 li {
+  font-size: 14px;
+}
+.aboutUs .about2 img {
+  width: 510px;
 }
 
 /*# sourceMappingURL=app.css.map */

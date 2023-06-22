@@ -12,80 +12,81 @@
 <body>
     <!-- todo Navbar ----------------------------------------------------->
     <header>
-    <div class="d-lg-flex align-items-lg-center justify-content-lg-around my-lg-3 
+        <div class="d-lg-flex align-items-lg-center justify-content-lg-around my-lg-3 
                 d-md-flex align-items-md-center justify-content-md-around my-md-3
                 d-flex align-items-center justify-content-around my-3">
-        <div>
-            <a class="logo nav-link" href="#">LionsResto<span class="text-red">.</span></a>
-        </div>
-        <div class="navlaptop d-lg-flex justify-content-lg-around">
-            <div class="mx-lg-2">
-                <a class="navlinks nav-link active" aria-current="page" href="#">Home</a>
-            </div>
-            <div class="px-lg-3">
-                <a class="navlinks nav-link" href="#">About</a>
-            </div>
-            <div class="px-lg-3">
-                <a class="navlinks nav-link" href="#">Menu</a>
-            </div>
             <div>
-                <a class="navlinks nav-link" href="#">Events</a>
+                <a class="logo nav-link" href="#">LionsResto<span class="text-red">.</span></a>
             </div>
-            <div class="px-lg-3">
-                <a class="navlinks nav-link" href="#">Chefs</a>
-            </div>
-            <div class="px-lg-3">
-                <a class="navlinks nav-link" href="#">Gallery</a>
-            </div>
-            <div class="px-lg-3">
-                <div class="dropdown">
-                    <div class="navlinks btnD" id="btnD">Drop Down
-                        <i class="fa fa-caret-down ms-1" id="arrow"></i>
+            <div class="navlaptop d-lg-flex justify-content-lg-around">
+                <div class="mx-lg-2">
+                    <a class="navlinks nav-link active" aria-current="page" href="#">Home</a>
+                </div>
+                <div class="px-lg-3">
+                    <a class="navlinks nav-link" href="#">About</a>
+                </div>
+                <div class="px-lg-3">
+                    <a class="navlinks nav-link" href="#">Menu</a>
+                </div>
+                <div>
+                    <a class="navlinks nav-link" href="#">Events</a>
+                </div>
+                <div class="px-lg-3">
+                    <a class="navlinks nav-link" href="#">Chefs</a>
+                </div>
+                <div class="px-lg-3">
+                    <a class="navlinks nav-link" href="#">Gallery</a>
+                </div>
+                <div class="px-lg-3">
+                    <div class="dropdown">
+                        <div class="navlinks btnD" id="btnD">Drop Down
+                            <i class="fa fa-caret-down ms-1" id="arrow"></i>
+                        </div>
+                        <div class="myDropdown" id="myDropdown">
+                            <a href="#">Drop Down 1</a>
+                            <a href="#">
+                                <div class="btnD2" id="btnD2">Deep Drop Down
+                                    <i class="fa fa-caret-down ms-1" id="arrow"></i>
+                                </div>
+                                <div class="myDropdown" id="myDropdown2">
+                                    <a href="#">one</a>
+                                    <a href="#">two</a>
+                                </div>
+                            </a>
+                            <a href="#">Drop Down 2</a>
+                            <a href="#">Drop Down 3</a>
+                            <a href="#">Drop Down 4</a>
+                        </div>
                     </div>
-                    <div class="myDropdown" id="myDropdown">
-                        <a href="#">Drop Down 1</a>
-                        <a href="#">
-                            <div class="btnD2" id="btnD2">Deep Drop Down
-                                <i class="fa fa-caret-down ms-1" id="arrow"></i>
-                            </div>
-                            <div class="myDropdown" id="myDropdown2">
-                                <a href="#">one</a>
-                                <a href="#">two</a>
-                            </div>
-                        </a>
-                        <a href="#">Drop Down 2</a>
-                        <a href="#">Drop Down 3</a>
-                        <a href="#">Drop Down 4</a>
+                </div>
+                <div class="navlinks px-lg-3">
+                    <a class="nav-link" href="#">Contact</a>
+                </div>
+            </div>
+            <div class="d-md-flex align-items-md-center d-flex align-items-center">
+                <form>
+                    <button
+                        class="btn btn-red rounded-pill px-lg-3 py-lg-2 px-md-4 py-md-2 py-1 px-2 me-2 connexion">Connexion</button>
+                </form>
+                <!-- ? "Hamburger menu" -->
+                <div class="menuBurger mx-md-3">
+                    <a href="#" id="logoBurger" class="nav-link">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="linksBurger">
+                        <a class="navlinks nav-link" aria-current="page" href="#">Home</a>
+                        <a class="navlinks nav-link" href="#">About</a>
+                        <a class="navlinks nav-link" href="#">Menu</a>
+                        <a class="navlinks nav-link" href="#">Events</a>
+                        <a class="navlinks nav-link" href="#">Chefs</a>
+                        <a class="navlinks nav-link" href="#">Gallery</a>
+                        <a class="navlinks nav-link" href="#">Drop Down</a>
+                        <a class="navlinks nav-link" href="#">Contact</a>
                     </div>
                 </div>
             </div>
-            <div class="navlinks px-lg-3">
-                <a class="nav-link" href="#">Contact</a>
-            </div>
         </div>
-        <div class="d-md-flex align-items-md-center d-flex align-items-center">
-            <form>
-                <button class="btn btn-red rounded-pill px-lg-3 py-lg-2 px-md-4 py-md-2 py-1 px-2 me-2 connexion">Connexion</button>
-            </form>
-            <!-- ? "Hamburger menu" -->
-            <div class="menuBurger mx-md-3">
-                <a href="#" id="logoBurger" class="nav-link">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="linksBurger">
-                    <a class="navlinks nav-link" aria-current="page" href="#">Home</a>
-                    <a class="navlinks nav-link" href="#">About</a>
-                    <a class="navlinks nav-link" href="#">Menu</a>
-                    <a class="navlinks nav-link" href="#">Events</a>
-                    <a class="navlinks nav-link" href="#">Chefs</a>
-                    <a class="navlinks nav-link" href="#">Gallery</a>
-                    <a class="navlinks nav-link" href="#">Drop Down</a>
-                    <a class="navlinks nav-link" href="#">Contact</a>
-                </div>  
-            </div>
-        </div>
-    </div>
-</header>
+    </header>
     <!-- todo section 1 : Hero --------------------------------->
     <section>
         <div class="bg-bright hero d-lg-flex align-items-lg-center justify-content-lg-around
@@ -97,8 +98,10 @@
                     <p> earum officiis sapiente magni vero nesciunt eveniet voluptatibus voluptate,</p>
                     <p> repellendus suscipit minima laborum sint quasi reiciendis dolorem nisi.</p>
                 </div>
-                <form class="d-lg-flex align-items-lg-center d-md-flex align-items-md-center justify-content-md-center d-flex align-items-center justify-content-center">
-                    <button class="btn btn-red rounded-pill fs-5  px-lg-4 me-lg-4 px-md-4 me-md-3 px-4 me-3">Book a Table</button>
+                <form
+                    class="d-lg-flex align-items-lg-center d-md-flex align-items-md-center justify-content-md-center d-flex align-items-center justify-content-center">
+                    <button class="btn btn-red rounded-pill fs-5  px-lg-4 me-lg-4 px-md-4 me-md-3 px-4 me-3">Book a
+                        Table</button>
                     <a class="me-lg-2 me-md-2 me-2">
                         <i class="fa-regular fa-2x fa-circle-play" style="color:#CC1211;"> </i>
                     </a>
@@ -111,7 +114,54 @@
         </div>
     </section>
     <!-- todo section 2 : ABOUT US --------------------------------->
-
+    <section>
+        <div class="aboutUs">
+            <div class="section-title">
+                <p>ABOUT US</p>
+                <h1>LEARN MORE <span class="text-red">ABOUT US</span></h1>
+            </div>
+            <div class="d-lg-flex my-lg-5">
+                <div class="about">
+                    <div>
+                        <img src="./public/images/about.jpg" alt="" srcset="">
+                    </div>
+                    <div class="whiteticket">
+                        <p class="fs-5 my-lg-2 mb-lg-4"><b>Book a Table</b> <br>
+                            <b class="fs-4 text-red">+1 1234 56789 55</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="about2">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum quasi, illum
+                            sapiente, Blanditiis ea nam, obcaecati placeat id delectus?</p>
+                        <div >
+                            <ul class="fa-ul">
+                                <li class="mb-lg-2"><span class="fa-li"><i class="fa-solid fa-check-double fa-xs" style="color: #CC1211;"></i></span>
+                                    itaque quo molestiae provident inventore maiores. 
+                                </li>
+                                <li class="mb-lg-2"><span class="fa-li"><i class="fa-solid fa-check-double fa-xs" style="color: #CC1211;"></i></span>
+                                    ipsum dolor sit amet consectetur adipisicing elit.
+                                </li>
+                                <li class="mb-lg-2"><span class="fa-li"><i class="fa-solid fa-check-double fa-xs" style="color: #CC1211;"></i></span>
+                                    ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Perspiciatis sit eos odio in
+                                    consectetur adipisicing elit.
+                                </li>            
+                            </ul>
+                        </div>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sit eos odio in
+                            consectetur adipisicing elit. Iste cupiditate explicabo ea magni excepturi sapiente alias
+                            sed doloremque
+                            hic, deleniti, vitae at laborum dolor odit aperiam id molestias enim commodi?</p>
+                    </div>
+                    <div>
+                        <img src="./public/images/about-2.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

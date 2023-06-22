@@ -1,10 +1,12 @@
 //todo section 1 : Hero --------------------------------------------------------------------------------
+*{
+    margin: 0;
+}
 .hero{
     #heroImg{
         width: 25rem;
     }
     height: 29rem;
-    width: 100vw;
     h1{
         font-family: "amaticBold";
         font-size: 60px;
@@ -60,3 +62,51 @@
 }
 
 // todo section 2 : ABOUT US ----------------------------------------------------------------->
+.section-title{
+    text-align: center;
+    margin-top: 55px;
+    p{
+        opacity: 50%;
+        font-weight: bold;
+        font-size: 13px; 
+    }
+    h1{
+        opacity: 85%;
+        font-family: "amaticBold";
+        line-height: 30px;
+    }
+}
+.aboutUs{
+    height: 25rem;
+    margin: 65px;
+    .about{
+        position: relative;
+        width: 60%;
+        height: 39rem;
+        overflow: hidden;     
+        .whiteticket{
+            position: absolute;
+            text-align: center;
+            bottom: 25px;
+            left: 7%;
+            z-index: 1;
+            background-color: white;
+            width: 85%;
+        }
+    }
+    .about2{
+        margin-left: 55px;
+        width: 40%;
+        height: 39rem;
+        overflow: hidden;
+        p,li{
+            font-size: 14px;
+        }
+
+        img{
+            width: 510px;
+        }
+    }
+
+
+}
