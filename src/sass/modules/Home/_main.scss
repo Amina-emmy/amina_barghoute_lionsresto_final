@@ -534,7 +534,7 @@
 // todo section 4 : Events ---------------------------------------------------------------------------------------------------------->
 .carrouselEvents{
     position: relative;
-    height:50rem;
+    height:30rem;
     .carrouselEvents_contenu{
         position: absolute;
         z-index: 1;
@@ -598,7 +598,7 @@
     }
     .carrouselEvents{
         // position: relative;
-        height:50rem;
+        height:30rem;
         .carrouselEvents_contenu{
             display: flex;
             flex-direction: column;
@@ -616,9 +616,114 @@
     }
 }
 // todo section 5 : Chefs --------------------------------------------------------------------------------------------------->
+.chefCard{
+    width: 20rem;
+    background-color: white;
+    .Imgchef{
+        position: relative;
+    }
+    .imgShape{
+        position: absolute;
+        z-index: 1;
+        bottom: 0px;
+    }
+    img{
+        width: 20rem;
+    }
+    .chefDescrp{
+        padding: 10px;
+    }
+    h5{
+        font-size: 17px;
+    }
+    h6{
+        font-size: 14px;
+        opacity: 75%;
+    }
+    P{
+        padding: 11px;
+        opacity: 75%;
+        font-size: 13px;
+    }
+}
+//^ version tablet Events
+@media ( min-width:768px ) and (max-width:1023px)  {
+    .sectionChefs{
+        margin-top: 60px;
+    }
+    .chefCard{
+        margin-right: 20px;
+        margin-top: 20px;
+        width: 20rem;
+        background-color: white;
+        .Imgchef{
+            position: relative;
+        }
+        .imgShape{
+            position: absolute;
+            z-index: 1;
+            bottom: 0px;
+        }
+        img{
+            width: 20rem;
+        }
+        .chefDescrp{
+            padding: 10px;
+        }
+        h5{
+            font-size: 17px;
+        }
+        h6{
+            font-size: 14px;
+            opacity: 75%;
+        }
+        P{
+            padding: 11px;
+            opacity: 75%;
+            font-size: 13px;
+        }
+    }
 
-
+}
+//^ version mobile Events
+@media ( min-width:375px ) and (max-width:425px){
+    .sectionChefs{
+        margin-top: 60px;
+    }
+    .chefCard{
+        margin-top: 20px;
+        width: 20rem;
+        background-color: white;
+        .Imgchef{
+            position: relative;
+        }
+        .imgShape{
+            position: absolute;
+            z-index: 1;
+            bottom: 0px;
+        }
+        img{
+            width: 20rem;
+        }
+        .chefDescrp{
+            padding: 10px;
+        }
+        h5{
+            font-size: 17px;
+        }
+        h6{
+            font-size: 14px;
+            opacity: 75%;
+        }
+        P{
+            padding: 11px;
+            opacity: 75%;
+            font-size: 13px;
+        }
+    }
+}
 // todo section 6 : Book a Table --------------------------------------------------------------------------------------------------->
+
 
 // todo section 7 : Gallery --------------------------------------------------------------------------------------------------->
 

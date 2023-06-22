@@ -11807,7 +11807,7 @@ textarea.form-control-lg {
 }
 .carrouselEvents {
   position: relative;
-  height: 50rem;
+  height: 30rem;
 }
 .carrouselEvents .carrouselEvents_contenu {
   position: absolute;
@@ -11863,7 +11863,7 @@ textarea.form-control-lg {
     line-height: 60px;
   }
   .carrouselEvents {
-    height: 50rem;
+    height: 30rem;
   }
   .carrouselEvents .carrouselEvents_contenu {
     display: flex;
@@ -11876,6 +11876,110 @@ textarea.form-control-lg {
   }
   .carrouselEvents .carrouselEvents_contenu .event2, .carrouselEvents .carrouselEvents_contenu .event3 {
     display: none;
+  }
+}
+.chefCard {
+  width: 20rem;
+  background-color: white;
+}
+.chefCard .Imgchef {
+  position: relative;
+}
+.chefCard .imgShape {
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+}
+.chefCard img {
+  width: 20rem;
+}
+.chefCard .chefDescrp {
+  padding: 10px;
+}
+.chefCard h5, .chefCard .h5 {
+  font-size: 17px;
+}
+.chefCard h6, .chefCard .h6 {
+  font-size: 14px;
+  opacity: 75%;
+}
+.chefCard P {
+  padding: 11px;
+  opacity: 75%;
+  font-size: 13px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sectionChefs {
+    margin-top: 60px;
+  }
+  .chefCard {
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 20rem;
+    background-color: white;
+  }
+  .chefCard .Imgchef {
+    position: relative;
+  }
+  .chefCard .imgShape {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+  }
+  .chefCard img {
+    width: 20rem;
+  }
+  .chefCard .chefDescrp {
+    padding: 10px;
+  }
+  .chefCard h5, .chefCard .h5 {
+    font-size: 17px;
+  }
+  .chefCard h6, .chefCard .h6 {
+    font-size: 14px;
+    opacity: 75%;
+  }
+  .chefCard P {
+    padding: 11px;
+    opacity: 75%;
+    font-size: 13px;
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  .sectionChefs {
+    margin-top: 60px;
+  }
+  .chefCard {
+    margin-top: 20px;
+    width: 20rem;
+    background-color: white;
+  }
+  .chefCard .Imgchef {
+    position: relative;
+  }
+  .chefCard .imgShape {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+  }
+  .chefCard img {
+    width: 20rem;
+  }
+  .chefCard .chefDescrp {
+    padding: 10px;
+  }
+  .chefCard h5, .chefCard .h5 {
+    font-size: 17px;
+  }
+  .chefCard h6, .chefCard .h6 {
+    font-size: 14px;
+    opacity: 75%;
+  }
+  .chefCard P {
+    padding: 11px;
+    opacity: 75%;
+    font-size: 13px;
   }
 }
 
