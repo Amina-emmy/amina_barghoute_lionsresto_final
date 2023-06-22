@@ -1,112 +1,467 @@
 //todo section 1 : Hero --------------------------------------------------------------------------------
-*{
+* {
     margin: 0;
 }
-.hero{
-    #heroImg{
+
+.hero {
+    #heroImg {
         width: 25rem;
     }
+
     height: 29rem;
-    h1{
+
+    h1 {
         font-family: "amaticBold";
         font-size: 60px;
     }
-    p{
+
+    p {
         font-size: 13px;
         opacity: 50%;
         line-height: 3px;
     }
 }
+
 //^ hero version tablet
-@media ( min-width:768px ) and (max-width:1023px)  {
-    .hero{
+@media (min-width:768px) and (max-width:1023px) {
+    .hero {
         height: 74rem;
         width: 100vw;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        #heroImg{
+
+        #heroImg {
             width: 40rem;
         }
-        h1,p{
+
+        h1,
+        p {
             text-align: center;
         }
-        p{
+
+        p {
             font-size: 20px;
             line-height: 7px;
         }
     }
 }
+
 //^ hero version mobile
-@media ( min-width:375px ) and (max-width:425px){
-    .hero{
+@media (min-width:375px) and (max-width:425px) {
+    .hero {
         height: 57rem;
         width: 100vw;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        #heroImg{
+
+        #heroImg {
             width: 25rem;
         }
-        h1,p{
+
+        h1,
+        p {
             text-align: center;
         }
-        p{
+
+        p {
             margin: 0;
             font-size: 20px;
             line-height: 23px;
         }
     }
 }
-
-// todo section 2 : ABOUT US ----------------------------------------------------------------->
-.section-title{
+// todo section 2 : ABOUT US ---------------------------------------------------------------------------------------------------------->
+//* ABOUT US part 1
+.section-title {
     text-align: center;
     margin-top: 55px;
-    p{
+    p {
         opacity: 50%;
         font-weight: bold;
-        font-size: 13px; 
+        font-size: 13px;
     }
-    h1{
+    h1 {
         opacity: 85%;
         font-family: "amaticBold";
         line-height: 30px;
     }
 }
-.aboutUs{
-    height: 25rem;
-    margin: 65px;
-    .about{
+.aboutUs {
+    .about {
+        margin-bottom: 20px;
+        margin-left: 65px;
         position: relative;
         width: 60%;
-        height: 39rem;
-        overflow: hidden;     
-        .whiteticket{
+        height: 42.3rem;
+        overflow: hidden;
+
+        .whiteticket {
             position: absolute;
             text-align: center;
-            bottom: 25px;
+            bottom: 55px;
             left: 7%;
             z-index: 1;
             background-color: white;
             width: 85%;
         }
     }
-    .about2{
+    .about2 {
+        margin-right: 65px;
         margin-left: 55px;
         width: 40%;
-        height: 39rem;
+        height: 43rem;
         overflow: hidden;
-        p,li{
+        p,
+        li {
             font-size: 14px;
         }
 
-        img{
+        img {
             width: 510px;
         }
     }
+    .aboutCards {
+        height: 29rem;
+        padding-top: 58px;
+        padding-bottom: 53px;
+        padding-left: 52px;
+        .card1 {
+            padding: 26px;
+            width: 27%;
+            height: 97%;
+            p {
+                font-size: 13px;
+                padding-top: 17px;
+                padding-bottom: 5px;
+                opacity: 75%;
+            }
 
+            button {
+                font-size: 13px;
+            }
+        }
+        .card2 {
+            margin-right: 18px;
+            text-align: center;
+            background-color: white;
+            width: 19%;
+            height: 86%;
+            padding-top: 15px;
+            padding-left: 23px;
+            padding-right: 23px;
+            .bg-pink {
+                width: 65px;
+                height: 65px;
+            }
+            h5{
+                opacity: 80%;
+            }
+            p {
+                font-size: 13px;
+                opacity: 80%;
+            }
+        }
+    }
+}
+//*ABOUT US part 2
+.bg-image{
+    height: 15rem ;
+    background-image: url("../../../../public/images/stats-bg.jpg");
+    background-position: center;
+    background-position-y:70%;
+    filter: brightness(0.5);
+    //!!!!!!!!!!!!!
+    // position: relative;
+    // z-index: -9999;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    .statsInfo{
+        color: white;
+        display: flex;
+        gap: 200px;
+        align-items:center;
+        padding-top: 50px;
+    }
+}
+//^ ABOUT US version tablet
+@media ( min-width:768px ) and (max-width:1023px)  {
+    .section-title {
+        text-align: center;
+        margin-top: 55px;
+        p {
+            opacity: 50%;
+            font-size: 15px;
+        }
+        h1 {
+            opacity: 85%;
+            font-family: "amaticBold";
+            font-size: 50px;
+            line-height: 30px;
+        }
+    }
+    .aboutUs {
+        .about12{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .about {
+            right: 30px;
+            margin-bottom: 20px;
+            position: relative;
+            width: 90%;
+            height: 36rem;
+            overflow: hidden;
+            .whiteticket {
+                position: absolute;
+                text-align: center;
+                bottom: 55px;
+                left: 7%;
+                z-index: 1;
+                background-color: white;
+                width: 85%;
+            }
+        }
+        .about2 {
+            width: 90%;
+            height: 46rem;
+            overflow: hidden;
+            margin-right: 21px;
+            margin-bottom: 25px;
+            p,
+            li {
+                font-size: 16px;
+            }
+    
+            img {
+                width: 97%;
+            }
+        }
+        .aboutCards {
+            height: 70rem;
+            padding-top: 65px;
+            padding-bottom: 65px;
+            padding-bottom: 53px;
+            padding-left: 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .card1 {
+                padding: 22px;
+                width: 97%;
+                height: 26%;
+                p {
+                    font-size: 15px;
+                    padding-top: 17px;
+                    padding-bottom: 5px;
+                    opacity: 75%;
+                }
+                button {
+                    font-size: 18px;
+                }
+            }
+            .card2 {
+                margin-top: 30px;
+                text-align: center;
+                background-color: white;
+                width: 97%;
+                height: 23%;
+                padding-top: 15px;
+                padding-left: 23px;
+                padding-right: 23px;
+                .bg-pink {
+                    width: 65px;
+                    height: 65px;
+                }
+                h5{
+                    opacity: 80%;
+                }
+                p {
+                    font-size: 18px;
+                    opacity: 80%;
+                }
+            }
+        }
+    }
+    //*ABOUT US part 2
+.bg-image{
+    height: 30rem ;
+    background-image: url("../../../../public/images/stats-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    //!!!!!!!!!!!!!
+    // position: relative;
+    // z-index: -9999;
+    .statsInfo{
+        color: white;
+        gap: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+}
 
+//^ ABOUT US version mobile
+@media ( min-width:375px ) and (max-width:425px){
+    .section-title {
+        text-align: center;
+        margin-top: 55px;
+        p {
+            opacity: 50%;
+            font-size: 15px;
+        }
+        h1 {
+            opacity: 85%;
+            font-family: "amaticBold";
+            font-size: 50px;
+            line-height: 30px;
+        }
+    }
+    .aboutUs {
+        .about12{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .about {
+            right: 33px;
+            margin-bottom: 20px;
+            position: relative;
+            width: 100%;
+            height: 32rem;
+            overflow: hidden;
+            .whiteticket {
+                padding-top: 12px;
+                padding-bottom: 17px;
+                position: absolute;
+                text-align: center;
+                bottom: 60px;
+                left: 18%;
+                z-index: 1;
+                background-color: white;
+                width: 65%;
+            }
+        }
+        .about2 {
+            width: 92%;
+            height: 46rem;
+            overflow: hidden;
+            margin-bottom: 25px;
+            p,
+            li {
+                margin-left: 9px;
+                font-size: 16px;
+            }
+            img {
+                margin-left: 9px;
+                width: 98%;
+            }
+        }
+        .aboutCards {
+            height: 80rem;
+            padding-top: 90px;
+            padding-bottom: 90px;
+            padding-left: 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .card1 {
+                margin-right: 14px;
+                padding: 22px;
+                width: 95%;
+                height: 32%;
+                p {
+                    font-size: 14px;
+                    padding-top: 17px;
+                    padding-bottom: 5px;
+                    opacity: 75%;
+                }
+                button {
+                    font-size: 15px;
+                }
+            }
+            .card2 {
+                margin-top: 30px;
+                text-align: center;
+                background-color: white;
+                width: 95%;
+                height: 27%;
+                padding-top: 19px;
+                padding-left: 23px;
+                padding-right: 23px;
+                .bg-pink {
+                    width: 65px;
+                    height: 65px;
+                }
+                h5{
+                    opacity: 80%;
+                }
+                p {
+                    font-size: 15px;
+                    opacity: 80%;
+                }
+            }
+        }
+    }
+    .bg-image{
+        height: 43rem ;
+        background-image: url("../../../../public/images/stats-bg.jpg");
+        background-position: center;
+        background-position-x:50%;
+        filter: brightness(0.5);
+        //!!!!!!!!!!!!!
+        // position: relative;
+        // z-index: -9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        padding-bottom: 20px;
+        .statsInfo{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            align-items:center;
+            padding-top: 100px;
+        }
+    }
+}
+// todo section 3 : Menu ---------------------------------------------------------------------------------------------------------->
+.sectionMenu{
+    button{
+        border: none;
+        background-color: white;
+        border-bottom: 2px solid;
+        border-color:$bright ;
+        font-size: 18px;
+        font-weight:400;
+        padding-bottom: 6px;
+    }
+    .borderColor{
+        border-color: $red;
+    }
+    .lineh{
+        line-height: 10px;
+    }
+    button:hover{
+        color: $red;
+        border: none;
+        background-color: white;
+        border-bottom: 2px solid $bright;
+        font-size: 18px;
+    }
 }

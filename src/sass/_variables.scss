@@ -5,6 +5,8 @@
 
 //? add your colors to Bootstrap's map
 $red:#CC1211;
+$redBright:#f9e6e56b;
+$pink: #F9E6E5;
 $gray:#201F24;
 $bright:#EEEEEE;
 
@@ -12,5 +14,7 @@ $custom-colors : (
     "red" : $red ,
     "gray" : $gray ,
     "bright": $bright,
+    "redBright":$redBright,
+    "pink":$pink,
 );
 $theme-colors : map-merge($theme-colors , $custom-colors);

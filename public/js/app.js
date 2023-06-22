@@ -47,3 +47,14 @@ btn_burger.addEventListener("click", menuBurger)
 //todo section 1 : Hero -----------------------------------------------------------------------------------------------------------
 
 // todo section 2 : ABOUT US ----------------------------------------------------------------->
+
+// todo section 3 : Menu ----------------------------------------------------------------->
+let menu_btns=document.querySelectorAll(".btnMenu");
+for (let b = 0; b < menu_btns.length; b++) {
+    let btnM = menu_btns[b];
+    btnM.addEventListener("click",()=>{
+        //if id btn==id divmenu add class sinon remove it
+        btnM.classList.add("borderColor");
+    })
+    
+}
