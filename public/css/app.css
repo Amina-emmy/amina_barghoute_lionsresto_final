@@ -11316,6 +11316,13 @@ textarea.form-control-lg {
   margin: 0;
 }
 
+#myDropdown2 {
+  position: absolute;
+  border: 1px solid #EEEEEE;
+  left: 60%;
+  top: 34%;
+}
+
 .hero {
   height: 29rem;
 }
@@ -11718,7 +11725,7 @@ textarea.form-control-lg {
     padding-top: 100px;
   }
 }
-.sectionMenu button {
+.sectionMenu .btnMenu {
   border: none;
   background-color: white;
   border-bottom: 2px solid;
@@ -11733,12 +11740,143 @@ textarea.form-control-lg {
 .sectionMenu .lineh {
   line-height: 10px;
 }
-.sectionMenu button:hover {
+.sectionMenu .btnMenu:hover {
   color: #CC1211;
   border: none;
   background-color: white;
   border-bottom: 2px solid #EEEEEE;
   font-size: 18px;
+}
+.sectionMenu .menu {
+  text-align: center;
+  gap: 80px;
+}
+.sectionMenu .menu img {
+  width: 270px;
+}
+.sectionMenu .menu h5, .sectionMenu .menu .h5 {
+  padding-top: 11px;
+  opacity: 90%;
+}
+.sectionMenu .menu P {
+  font-size: 13px;
+  opacity: 75%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu img {
+    width: 90rem;
+  }
+  .menu h5, .menu .h5 {
+    font-size: 23px;
+    padding-top: 11px;
+    opacity: 90%;
+  }
+  .menu P {
+    font-size: 18px;
+    opacity: 75%;
+  }
+  .menu h4, .menu .h4 {
+    font-size: 20;
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu img {
+    width: 90rem;
+  }
+  .menu h5, .menu .h5 {
+    font-size: 23px;
+    padding-top: 11px;
+    opacity: 90%;
+  }
+  .menu P {
+    font-size: 18px;
+    opacity: 75%;
+  }
+  .menu h4, .menu .h4 {
+    font-size: 20;
+  }
+}
+.carrouselEvents {
+  position: relative;
+  height: 50rem;
+}
+.carrouselEvents .carrouselEvents_contenu {
+  position: absolute;
+  z-index: 1;
+  /*// !  The dots/bullets/indicators */
+}
+.carrouselEvents .carrouselEvents_contenu img {
+  filter: brightness(0.5);
+  width: 28rem;
+  height: 24rem;
+}
+.carrouselEvents .carrouselEvents_contenu Something is wrong .dots {
+  position: absolute;
+  z-index: 1;
+  top: 300px;
+}
+.carrouselEvents .carrouselEvents_contenu Something is wrong .dots .dot {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #111010;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carrouselEvents .carrouselEvents_contenu .active, .carrouselEvents .carrouselEvents_contenu .dot:hover {
+  background-color: #CC1211;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .carrouselEvents {
+    height: 50rem;
+  }
+  .carrouselEvents .carrouselEvents_contenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrouselEvents .carrouselEvents_contenu img {
+    filter: brightness(0.5);
+    width: 48rem;
+    height: 48rem;
+  }
+  .carrouselEvents .carrouselEvents_contenu .event2, .carrouselEvents .carrouselEvents_contenu .event3 {
+    display: none;
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  .section-title h1, .section-title .h1 {
+    opacity: 85%;
+    font-family: "amaticBold";
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .carrouselEvents {
+    height: 50rem;
+  }
+  .carrouselEvents .carrouselEvents_contenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrouselEvents .carrouselEvents_contenu img {
+    filter: brightness(0.5);
+    width: 27rem;
+    height: 26rem;
+  }
+  .carrouselEvents .carrouselEvents_contenu .event2, .carrouselEvents .carrouselEvents_contenu .event3 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

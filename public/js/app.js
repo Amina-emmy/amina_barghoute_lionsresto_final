@@ -49,12 +49,81 @@ btn_burger.addEventListener("click", menuBurger)
 // todo section 2 : ABOUT US ----------------------------------------------------------------->
 
 // todo section 3 : Menu ----------------------------------------------------------------->
-let menu_btns=document.querySelectorAll(".btnMenu");
+
+let menu_btns = document.querySelectorAll(".btnMenu");
+
+let div_starters = document.querySelector("#starters");
+let div_startersId=div_starters.getAttribute("id");
+
+let div_breakie = document.querySelector("#breakie");
+let div_breakieId=div_breakie.getAttribute("id");
+
+let div_lunch = document.querySelector("#lunch");
+let div_lunchId=div_lunch.getAttribute("id");
+
+let div_dinner = document.querySelector("#dinner");
+let div_dinnerId=div_dinner.getAttribute("id");
+
 for (let b = 0; b < menu_btns.length; b++) {
     let btnM = menu_btns[b];
-    btnM.addEventListener("click",()=>{
+    let btnM_id = btnM.getAttribute("id");
+    btnM.addEventListener("click", () => {
         //if id btn==id divmenu add class sinon remove it
-        btnM.classList.add("borderColor");
+        switch (btnM_id) {
+            case div_startersId:
+                // div_starters.classList.remove("d-none");
+                // div_breakie.classList.add("d-none");
+                // div_lunch.classList.add("d-none");
+                // div_dinner.classList.add("d-none");
+
+                btnM.classList.add("borderColor");
+                menu_btns[1].classList.remove("borderColor");
+                menu_btns[2].classList.remove("borderColor");
+                menu_btns[3].classList.remove("borderColor");
+                break;
+            case div_breakieId:
+                // div_starters.classList.add("d-none");
+                // div_breakie.classList.remove("d-none");
+                // div_lunch.classList.add("d-none");
+                // div_dinner.classList.add("d-none");
+
+                btnM.classList.add("borderColor");
+                menu_btns[0].classList.remove("borderColor");
+                menu_btns[2].classList.remove("borderColor");
+                menu_btns[3].classList.remove("borderColor");
+                break;
+            case div_lunchId:
+                // div_starters.classList.add("d-none");
+                // div_breakie.classList.add("d-none");
+                // div_lunch.classList.remove("d-none");
+                // div_dinner.classList.add("d-none");
+
+                menu_btns[2].classList.add("borderColor");
+                menu_btns[0].classList.remove("borderColor");
+                menu_btns[1].classList.remove("borderColor");
+                menu_btns[3].classList.remove("borderColor");
+                break;
+            case div_dinnerId:
+                // div_starters.classList.add("d-none");
+                // div_breakie.classList.add("d-none");
+                // div_lunch.classList.add("d-none");
+                // div_dinner.classList.remove("d-none");
+
+                btnM.classList.add("borderColor");
+                menu_btns[0].classList.remove("borderColor");
+                menu_btns[2].classList.remove("borderColor");
+                menu_btns[1].classList.remove("borderColor");
+                break;
+        }
     })
-    
+
 }
+// todo section 4 : Events ----------------------------------------------------------------->
+
+// todo section 5 : Chefs --------------------------------------------------------------------------------------------------->
+
+// todo section 6 : Book a Table --------------------------------------------------------------------------------------------------->
+
+// todo section 7 : Gallery --------------------------------------------------------------------------------------------------->
+
+// todo section 8 : Contact --------------------------------------------------------------------------------------------------->

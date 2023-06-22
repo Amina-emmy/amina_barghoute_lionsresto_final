@@ -2,7 +2,12 @@
 * {
     margin: 0;
 }
-
+#myDropdown2{
+    position: absolute;
+    border: 1px solid $bright;
+    left: 60%;
+    top: 34%;
+}
 .hero {
     #heroImg {
         width: 25rem;
@@ -442,7 +447,7 @@
 }
 // todo section 3 : Menu ---------------------------------------------------------------------------------------------------------->
 .sectionMenu{
-    button{
+    .btnMenu{
         border: none;
         background-color: white;
         border-bottom: 2px solid;
@@ -457,11 +462,164 @@
     .lineh{
         line-height: 10px;
     }
-    button:hover{
+    .btnMenu:hover{
         color: $red;
         border: none;
         background-color: white;
         border-bottom: 2px solid $bright;
         font-size: 18px;
     }
+    .menu{
+        text-align: center;
+        gap: 80px;
+        img{
+            width: 270px;
+        }
+        h5{
+            padding-top: 11px;
+            opacity: 90%;
+        }
+        P{
+            font-size: 13px;
+            opacity: 75%;
+        }
+    }
 }
+//^ version tablet MENU
+@media ( min-width:768px ) and (max-width:1023px)  {
+    .menu{
+        flex-direction: column;
+        text-align: center;
+        img{
+            // width: 1000px;
+            width: 90rem;
+        }
+        h5{
+            font-size: 23px;
+            padding-top: 11px;
+            opacity: 90%;
+        }
+        P{
+            font-size: 18px;
+            opacity: 75%;
+        }
+        h4{
+            font-size: 20;
+        }
+    }
+}
+//^ version mobile MENU
+@media ( min-width:375px ) and (max-width:425px){
+    .menu{
+        flex-direction: column;
+        text-align: center;
+        img{
+            // width: 1000px;
+            width: 90rem;
+        }
+        h5{
+            font-size: 23px;
+            padding-top: 11px;
+            opacity: 90%;
+        }
+        P{
+            font-size: 18px;
+            opacity: 75%;
+        }
+        h4{
+            font-size: 20;
+        }
+    }
+}
+// todo section 4 : Events ---------------------------------------------------------------------------------------------------------->
+.carrouselEvents{
+    position: relative;
+    height:50rem;
+    .carrouselEvents_contenu{
+        position: absolute;
+        z-index: 1;
+        img{
+            filter: brightness(0.5);
+            width:28rem ;
+            height: 24rem; 
+        }
+        /*// !  The dots/bullets/indicators */ Something is wrong
+        .dots{
+            position: absolute;
+            z-index: 1;
+            top: 300px;
+            .dot {
+                cursor: pointer;
+                height: 25px;
+                width: 25px;
+                margin: 0 2px;
+                background-color: #111010;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+          }
+        }
+      .active, .dot:hover {
+        background-color: $red;
+      }
+        
+    }
+}
+//^ version tablet Events
+@media ( min-width:768px ) and (max-width:1023px)  {
+    .carrouselEvents{
+        // position: relative;
+        height:50rem;
+        .carrouselEvents_contenu{
+            display: flex;
+            flex-direction: column;
+            // position: absolute;
+            // z-index: 1;
+            img{
+                filter: brightness(0.5);
+                width:48rem ;
+                height: 48rem; 
+            }
+            .event2,.event3{
+                display: none;
+            }
+        }
+    }
+}
+//^ version mobile Events
+@media ( min-width:375px ) and (max-width:425px){
+    .section-title {
+        h1 {
+            opacity: 85%;
+            font-family: "amaticBold";
+            font-size: 50px;
+            line-height: 60px;
+        }
+    }
+    .carrouselEvents{
+        // position: relative;
+        height:50rem;
+        .carrouselEvents_contenu{
+            display: flex;
+            flex-direction: column;
+            // position: absolute;
+            // z-index: 1;
+            img{
+                filter: brightness(0.5);
+                width:27rem ;
+                height: 26rem; 
+            }
+            .event2,.event3{
+                display: none;
+            }
+        }
+    }
+}
+// todo section 5 : Chefs --------------------------------------------------------------------------------------------------->
+
+
+// todo section 6 : Book a Table --------------------------------------------------------------------------------------------------->
+
+// todo section 7 : Gallery --------------------------------------------------------------------------------------------------->
+
+// todo section 8 : Contact --------------------------------------------------------------------------------------------------->
