@@ -12151,4 +12151,38 @@ textarea.form-control-lg {
   margin-bottom: 40px;
 }
 
+footer {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerParts {
+  width: 80rem;
+  gap: 30px;
+}
+.footerParts .ftrPart {
+  width: 40%;
+}
+.footerParts .ftrPart h5, .footerParts .ftrPart .h5 {
+  font-size: 16px;
+}
+.footerParts .ftrPart p {
+  margin-left: 37px;
+  font-size: 13px;
+  opacity: 50%;
+}
+
+.copyR {
+  opacity: 50%;
+  font-size: 11px;
+}
+
+.socialMedia {
+  width: 33px;
+  height: 33px;
+  margin-right: 6px;
+}
+
 /*# sourceMappingURL=app.css.map */
