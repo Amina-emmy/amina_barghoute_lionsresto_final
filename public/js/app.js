@@ -42,7 +42,48 @@ function menuBurger() {
         x.style.display = "block";
     }
 }
-btn_burger.addEventListener("click", menuBurger)
+btn_burger.addEventListener("click", menuBurger);
+
+//* modal
+let btn_open = document.querySelectorAll(".open");
+let div_modal = document.querySelectorAll(".myModal");
+let x = document.querySelectorAll(".close");
+let myBody=document.body;
+
+const open_modal = (divMd) => {
+    divMd.classList.remove("dis-none"); //delete class{display: none;} pour rendre myModal on display block
+    myBody.classList.add("body-while-modalOpen");
+}
+const close_modal = (divMd) => {
+    divMd.classList.add("dis-none"); //add class{display: none;} pour rendre myModal on display none
+    myBody.classList.remove("body-while-modalOpen");
+}
+
+for (let index = 0; index < btn_open.length; index++) {
+    let btnE_open = btn_open[index];
+    let id_btnE_open=btnE_open.getAttribute("id");
+
+    for (let idx = 0; idx < div_modal.length; idx++) {
+        let divE = div_modal[idx];
+        let id_divE=divE.getAttribute("id");
+
+        if (id_divE==id_btnE_open) {
+            btn_open[index].addEventListener("click",()=>{
+                open_modal(div_modal[idx]);
+            });
+        }
+        for (let i = 0; i < x.length; i++) {
+            let x_close = x[i];
+            let id_x=x_close.getAttribute("id");
+
+            if (id_x==id_divE) {
+                x[i].addEventListener("click",()=>{
+                    close_modal(div_modal[idx]);
+                });
+            } 
+        }
+    } 
+}
 
 //todo section 1 : Hero -----------------------------------------------------------------------------------------------------------
 
@@ -69,6 +110,7 @@ for (let b = 0; b < menu_btns.length; b++) {
     let btnM_id = btnM.getAttribute("id");
     btnM.addEventListener("click", () => {
         //if id btn==id divmenu add class sinon remove it
+        //! needs fixing
         switch (btnM_id) {
             case div_startersId:
                 // div_starters.classList.remove("d-none");

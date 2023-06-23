@@ -11228,6 +11228,45 @@ textarea.form-control-lg {
   display: none;
 }
 
+.dis-none {
+  display: none;
+}
+
+.body-while-modalOpen {
+  overflow: hidden;
+  pointer-events: none;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.myModal {
+  pointer-events: visible;
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  z-index: 1;
+  overflow: auto;
+  background-color: white;
+  box-shadow: 1px 1px 5px 5px #F9E6E5;
+}
+
+.myModal-content {
+  text-align: center;
+  width: 400px;
+  height: 80px;
+}
+
+.close, .login {
+  float: right;
+  font-size: 15px;
+}
+
+.close:hover,
+.close:focus {
+  background-color: gray;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .navlaptop {
     display: none;
