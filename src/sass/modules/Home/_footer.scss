@@ -31,9 +31,48 @@ footer{
 
 //^ version tablet FOOTER
 @media ( min-width:768px ) and (max-width:1023px){
-
+    footer{
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footerParts{
+        width: 44rem;
+        gap: 30px;
+        .ftrPart{
+            width: 40%;
+        }
+    }
+    .copyR{
+        opacity: 50%;
+        font-size: 13px;
+    }
 }
 //^ version mobile FOOTER
 @media ( min-width:375px ) and (max-width:425px){
-
+    footer{
+        height: 33rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footerParts{
+        width: 20rem;
+        .ftrPart{
+            width: 100%;
+        }
+        h5{
+            font-size: 18px;
+        }
+        p{
+            margin-left: 37px;
+            font-size: 15px;
+            opacity: 50%;
+        }
+    }
+    .copyR{
+        opacity: 50%;
+        font-size: 13px;
+    }
 }

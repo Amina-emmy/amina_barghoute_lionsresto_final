@@ -12330,4 +12330,50 @@ footer {
   margin-right: 6px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerParts {
+    width: 44rem;
+    gap: 30px;
+  }
+  .footerParts .ftrPart {
+    width: 40%;
+  }
+  .copyR {
+    opacity: 50%;
+    font-size: 13px;
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  footer {
+    height: 33rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerParts {
+    width: 20rem;
+  }
+  .footerParts .ftrPart {
+    width: 100%;
+  }
+  .footerParts h5, .footerParts .h5 {
+    font-size: 18px;
+  }
+  .footerParts p {
+    margin-left: 37px;
+    font-size: 15px;
+    opacity: 50%;
+  }
+  .copyR {
+    opacity: 50%;
+    font-size: 13px;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
