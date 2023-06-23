@@ -11982,5 +11982,118 @@ textarea.form-control-lg {
     font-size: 13px;
   }
 }
+.bookTable .reservation {
+  width: 20rem;
+  height: 26rem;
+  overflow: hidden;
+}
+.bookTable img {
+  position: relative;
+  bottom: 15px;
+  width: 20rem;
+  height: 30rem;
+}
+.bookTable .divForm {
+  width: 55rem;
+}
+.bookTable .divForm form {
+  height: 17rem;
+  margin-top: 35px;
+}
+.bookTable .divForm input {
+  width: 15rem;
+  margin-left: 29px;
+  margin-top: 25px;
+  height: 40px;
+  opacity: 70%;
+}
+.bookTable .divForm textarea {
+  margin: 13px;
+  margin-top: 18px;
+  width: 49rem;
+  opacity: 70%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bookTable {
+    display: flex;
+    flex-direction: column;
+  }
+  .bookTable .reservation {
+    width: 41rem;
+    height: 35rem;
+    overflow: hidden;
+  }
+  .bookTable img {
+    position: relative;
+    bottom: 160px;
+    right: 80px;
+    width: 50rem;
+    height: 55rem;
+  }
+  .bookTable .divForm {
+    width: 40.5rem;
+    height: 29rem;
+  }
+  .bookTable .divForm form {
+    height: 17rem;
+    margin-top: 25px;
+  }
+  .bookTable .divForm input {
+    width: 15rem;
+    margin-left: 40px;
+    margin-right: 15px;
+    margin-top: 20px;
+    height: 43px;
+    opacity: 70%;
+  }
+  .bookTable .divForm textarea {
+    margin: 13px;
+    margin-left: 33px;
+    width: 33rem;
+    opacity: 70%;
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  .bookTable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bookTable .reservation {
+    width: 23rem;
+    overflow: hidden;
+  }
+  .bookTable img {
+    width: 23rem;
+  }
+  .bookTable .divForm {
+    width: 23rem;
+    height: 41rem;
+  }
+  .bookTable .divForm form {
+    height: 17rem;
+  }
+  .bookTable .divForm input {
+    width: 19rem;
+    margin-right: 15px;
+    margin-top: 20px;
+    height: 43px;
+    opacity: 70%;
+  }
+  .bookTable .divForm textarea {
+    margin: 15px;
+    margin-left: 33px;
+    width: 21rem;
+    opacity: 70%;
+  }
+}
+.section-gallery .carrouselGallery {
+  overflow: auto;
+}
+.section-gallery .carrouselGallery .carrouselGallery_contenu img {
+  width: 200px;
+}
 
 /*# sourceMappingURL=app.css.map */
