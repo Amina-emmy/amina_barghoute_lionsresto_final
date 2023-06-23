@@ -855,6 +855,62 @@
 }
 
 // todo section 8 : Contact --------------------------------------------------------------------------------------------------->
+.divContact{
+    .divMap{
+        width: 77rem;
+        iframe{
+            width: 100%;
+            height: 20rem;
+            margin-bottom: 15px;
+        }
+    }
+    .divTickets{
+        width: 77rem;
+        gap: 22px;
+    }
+    .contact-ticket{
+        width: 49%;
+        .icon-bg{
+            width: 60px;
+            height: 60px;
+        }
+        h5{
+            font-size: 17px;
+            opacity: 90%;
+        }
+        p{
+            font-size: 13px;
+            opacity: 80%;
+            line-height: 3px;
+        }
+    }
+    .divFormContact{
+        width: 76rem;
+        height: 23rem;
+        margin-top: 25px;
+        box-shadow: 2px 2px 4px 4px #ddd8d894;
+        form{
+            margin-top: 20px;
+            input{
+                width: 48%;
+                margin: 11px;
+                height: 35px;
+                opacity: 80%;
+            }
+            .inputSub{
+                margin-top: 0px;
+                width: 100%;
+            }
+            textarea{
+                width: 100%;
+                opacity: 80%;
+                margin-left: 11px;
+                margin-right: 11px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
 //^ version tablet Contact
 @media ( min-width:768px ) and (max-width:1023px){
 

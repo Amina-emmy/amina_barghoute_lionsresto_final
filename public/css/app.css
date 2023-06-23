@@ -12096,4 +12096,59 @@ textarea.form-control-lg {
   width: 200px;
 }
 
+.divContact .divMap {
+  width: 77rem;
+}
+.divContact .divMap iframe {
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 15px;
+}
+.divContact .divTickets {
+  width: 77rem;
+  gap: 22px;
+}
+.divContact .contact-ticket {
+  width: 49%;
+}
+.divContact .contact-ticket .icon-bg {
+  width: 60px;
+  height: 60px;
+}
+.divContact .contact-ticket h5, .divContact .contact-ticket .h5 {
+  font-size: 17px;
+  opacity: 90%;
+}
+.divContact .contact-ticket p {
+  font-size: 13px;
+  opacity: 80%;
+  line-height: 3px;
+}
+.divContact .divFormContact {
+  width: 76rem;
+  height: 23rem;
+  margin-top: 25px;
+  box-shadow: 2px 2px 4px 4px rgba(221, 216, 216, 0.5803921569);
+}
+.divContact .divFormContact form {
+  margin-top: 20px;
+}
+.divContact .divFormContact form input {
+  width: 48%;
+  margin: 11px;
+  height: 35px;
+  opacity: 80%;
+}
+.divContact .divFormContact form .inputSub {
+  margin-top: 0px;
+  width: 100%;
+}
+.divContact .divFormContact form textarea {
+  width: 100%;
+  opacity: 80%;
+  margin-left: 11px;
+  margin-right: 11px;
+  margin-bottom: 40px;
+}
+
 /*# sourceMappingURL=app.css.map */
