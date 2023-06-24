@@ -12305,10 +12305,10 @@ footer {
 
 .footerParts {
   width: 80rem;
-  gap: 30px;
+  gap: 40px;
 }
 .footerParts .ftrPart {
-  width: 40%;
+  width: 22%;
 }
 .footerParts .ftrPart h5, .footerParts .ftrPart .h5 {
   font-size: 16px;
